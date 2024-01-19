@@ -1,0 +1,14 @@
+.lw-promo-main-btn {
+  @extend .btn-reset;
+  @extend .flex-centered-content;
+
+  width: 100%;
+  max-width: 230px;
+  font-weight: 600;
+  padding: 15px 20px;
+  border-radius: 8px;
+  color: var(--white);
+  background-color: var(--primary);
+
+  @extend .hover-opacity;
+}

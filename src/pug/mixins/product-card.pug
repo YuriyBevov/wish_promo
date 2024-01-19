@@ -1,0 +1,5 @@
+mixin product-card(data)
+  .lw-promo-product-card
+    img(src=`./assets/img/${data.imgPath}` width= data.imgWidth height= data.imgHeight alt= data.title)
+    span!= data.title
+    span!= data.price

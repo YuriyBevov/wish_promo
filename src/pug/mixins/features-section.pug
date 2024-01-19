@@ -1,0 +1,11 @@
+mixin features-section(data)
+  section.lw-promo-features(class= data.cls ? data.cls : null)
+    .container
+      .lw-promo-features__container
+        h2!= data.title
+        p!= data.desc
+        ul.lw-promo-features__list
+          each item, index in data.list
+            li.lw-promo-features__list-item
+              span.lw-promo-features__list-item-index= index + 1
+              span.lw-promo-features__list-item-text!= item.text

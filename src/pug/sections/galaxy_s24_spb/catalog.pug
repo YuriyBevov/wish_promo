@@ -1,0 +1,39 @@
+include ../../mixins/product-card
+-
+  const productList = [
+    {
+      title: 'test',
+      price: '150 000',
+      img: 'imgPath...'
+    },
+    {
+      title: 'test',
+      price: '1 150 000',
+      img: 'imgPath...'
+    },
+  ]
+
+section.lw-promo-catalog
+  .container
+    .swiper.lw-promo-catalog-swiper
+      .swiper-wrapper
+        each product in productList
+          .swiper-slide
+            +product-card(product)
+
+    //ul.lw-promo-catalog__list
+        li.lw-promo-catalog__list-item
+          +product-card({
+            title: 'test',
+            price: '150 000',
+            img: 'imgPath...'
+          })
+
+        li.lw-promo-catalog__list-item
+          +product-card({
+
+          })
+        li.lw-promo-catalog__list-item
+          +product-card({
+
+          })

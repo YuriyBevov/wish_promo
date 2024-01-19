@@ -1,0 +1,37 @@
+/* stylelint-disable color-function-notation */
+/* stylelint-disable alpha-value-notation */
+
+:root {
+  // base
+  --base-font-family: "Montserrat", sans-serif;
+  --secondary-font-family: "Ubuntu", sans-serif;
+  --content-width: 1720px;
+  --container-offset: 100px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --white: #fff;
+  --black: #000000;
+
+  --dark: #141718;
+  --primary: #175cff;
+  --accent: #9c0000;
+  --light: #f3f5f7;
+
+  --skyblue: #c7e5fe;
+  --gold: #dad4a9;
+  --lightpurple: #c3c3d8;
+  --gray: #dcdcdc;
+  --lightgray: #e8e8e8;
+  --lightbrown: #faf4f0;
+  --darkgray: #75758a;
+
+  --main-bg: var(--white);
+
+  // scrollbar
+  --main-scrollbar-width: 6px;
+  --main-scrollbar-color: var(--white);
+  --main-scrollbar-thumb-color: var(--accent);
+
+  --main-transition: 0.25s 0.05s ease-in;
+}

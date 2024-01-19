@@ -1,0 +1,33 @@
+.lw-promo-features {
+  &__list {
+  }
+
+  &__list-item {
+  }
+
+  &--galaxy {
+    .lw-promo-features__list-item:nth-child(odd) {
+      background-color: var(--darkgray);
+    }
+
+    .lw-promo-features__list-item:nth-child(even) {
+      background-color: var(--gold);
+    }
+  }
+
+  @include m-b-tablet-down {
+    .lw-promo-features__list-item:nth-child(odd) {
+      margin-bottom: 20px;
+    }
+  }
+
+  // &--xiomi {
+  //   .lw-promo-features__list-item:nth-child(odd) {
+  //     background-color: var(--darkgray);
+  //   }
+
+  //   .lw-promo-features__list-item:nth-child(even) {
+  //     background-color: var(--gold);
+  //   }
+  // }
+}
