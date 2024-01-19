@@ -7,4 +7,5 @@ mixin hero-section(data)
       h1!= data.title
       p!= data.desc
       img(src=`./assets/img/${data.img}` alt= data.title width= data.imgWidth height= data.imgHeight)
+
       +main-btn('Заказать')
