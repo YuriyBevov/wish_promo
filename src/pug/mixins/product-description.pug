@@ -1,20 +1,13 @@
 
-mixin product-description(data)
+mixin product-description(content)
   section.section.lw-promo-product-description
     .lw-container
-      div.lw-promo-product-description-container
-        p.lw-main-text!= data.desc
-        ul.lw-main-text 
-            li= data.list.item 
-            li= data.list.item_2
-            li= data.list.item_3
-            li= data.list.item_4
-            li= data.list.item_5
-        p.lw-main-text-bold.lw-main-text!= data.subtitle  
-        p.lw-main-text!= data.desc_2
-        ul.lw-main-text 
-            li= data.list_2.item 
-            li= data.list_2.item_2
-            li= data.list_2.item_3
-            li= data.list_2.item_4
-        p.lw-main-text!= data.desc_3   
+      div.lw-promo-product-content!= content
+
+
+//- mixin list(list)
+//-   ul
+//-     each item in list
+//-       li
+//-         p!= item.title
+//-         span!= item.text

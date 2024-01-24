@@ -9,9 +9,10 @@
 
 /* Компоненты */
 @import "./components/main-btn";
-@import "./components/sale-badge";
+@import "./components/badge";
+@import "./components/product-card";
 /* Миксины */
-@import "./mixins/product-card";
+
 /* Секции */
 @import "./sections/hero";
 @import "./sections/features";

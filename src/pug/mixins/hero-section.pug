@@ -1,12 +1,27 @@
 include ./main-btn
-include ./sale-badge
+include ./badge
 
 mixin hero-section(data)
   section.lw-promo-hero(style=`background-image: url("./assets/img/${data.bg}")`)
     .lw-container
-      +sale-badge('Акция!')
+
+      +badge({
+          text: 'Акция!',
+        })
+
       h1!= data.title
       p.lw-main-text!= data.desc
       img(src=`./assets/img/${data.img}` alt= data.title width= data.imgWidth height= data.imgHeight)
 
       +main-btn('Заказать')
+
+      //- +list([
+      //-   {
+      //-     title: 'title1',
+      //-     text: 'text1'
+      //-   },
+      //-   {
+      //-     title: 'title2',
+      //-     text: 'text2'
+      //-   },
+      //- ])

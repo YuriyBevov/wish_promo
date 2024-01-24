@@ -1,0 +1,19 @@
+.lw-promo-badge {
+  @extend .flex-centered-content;
+
+  width: 100%;
+  max-width: 160px;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+
+  color: var(--accent);
+  background-color: var(--white);
+
+  &--small {
+    max-width: px;
+    padding: 4px 14px;
+  }
+}
