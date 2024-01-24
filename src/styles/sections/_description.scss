@@ -1,0 +1,27 @@
+.lw-promo-product-description {
+
+    &-container {
+        width: 100%;
+        max-width: 1560px;
+        margin: 0 auto;
+        padding: 80px 210px;
+        border: 2px solid var(--darkgray);
+    }
+
+    .lw-main-text {
+        font-weight: 300;
+        color: var(--black);
+        margin-bottom: 40px;
+    }
+    .lw-main-text-bold {
+        font-weight: 700;
+    }
+
+    ul {
+        padding-left: 25px;
+    }
+
+    ul > li {
+        margin-bottom: 2px;
+    }
+}

@@ -1,5 +1,34 @@
 .lw-promo-hero {
-  .lw-promo-main-btn {
-    max-width: 190px;
+  margin-bottom: 140px;
+
+  .lw-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    min-height: 550px;
+
+      h1 {
+        font-size: 45px;
+        font-weight: 700;
+        color: var(--dark);
+      }
+
+      .lw-main-text {
+        max-width: 800px;
+        font-size: 25px;
+        margin-bottom: 30px;
+      }
   }
+
+    .lw-promo-main-btn {
+      max-width: 190px;
+    }
+
+    img {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
 }

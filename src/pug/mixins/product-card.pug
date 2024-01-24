@@ -1,5 +1,19 @@
+include ./main-btn
+include ./sale-badge
+
 mixin product-card(data)
   .lw-promo-product-card
-    img(src=`./assets/img/${data.imgPath}` width= data.imgWidth height= data.imgHeight alt= data.title)
-    span!= data.title
-    span!= data.price
+    div.lw-promo-product-card-top
+      div.lw-promo-product-card-top-block 
+        +sale-badge('NEW', saleBadgeClass)
+        img(src=`./assets/img/si_Heart_alt.png` width="24" height="24")
+      img(src=`./assets/img/${data.imgPath}` width= data.imgWidth height= data.imgHeight alt= data.title)
+      +main-btn('Заказать')
+    .lw-promo-product-card-rating 
+        img(src=`./assets/img/icon-star.png` width="16" height="16")
+        img(src=`./assets/img/icon-star.png` width="16" height="16")
+        img(src=`./assets/img/icon-star.png` width="16" height="16")
+        img(src=`./assets/img/icon-star.png` width="16" height="16")
+        img(src=`./assets/img/icon-star.png` width="16" height="16")
+    span.lw-main-text.lw-promo-product-card-title!= data.title
+    span.lw-main-text.lw-promo-product-card-price!= data.price

@@ -9,7 +9,12 @@
 
 /* Компоненты */
 @import "./components/main-btn";
+@import "./components/sale-badge";
+/* Миксины */
+@import "./mixins/product-card";
 /* Секции */
 @import "./sections/hero";
 @import "./sections/features";
+@import "./sections/description";
+@import "./sections/catalog";
 /* Модальные окна */

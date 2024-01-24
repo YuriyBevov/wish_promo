@@ -3,19 +3,41 @@ include ../../mixins/product-card
 -
   const productList = [
     {
-      title: 'test',
-      price: '150 000',
-      img: 'imgPath...'
+      title: 'Смартфон Samsung Galaxy S24 8/128GB SM-S921B',
+      price: 'Цена ₽ 150 000',
+      imgPath: 'Samsung-Galaxy-S24-Purple-01-405x405.png',
+      saleBadgeClass: 'lw-promo-sale-badge--small',
+      imgWidth: 194,
+      imgHeight: 194
     },
     {
-      title: 'test',
-      price: '1 150 000',
-      img: 'imgPath...'
+      title: 'Смартфон Samsung Galaxy S24 8/128GB SM-S921B',
+      price: 'Цена ₽ 1 150 000',
+      imgPath: 'Samsung-Galaxy-S24-White-01-405x405.png',
+      saleBadgeClass: 'lw-promo-sale-badge--small',
+      imgWidth: 194,
+      imgHeight: 194
+    },
+    {
+      title: 'Смартфон Samsung Galaxy S24 8/128GB SM-S921B',
+      price: 'Цена ₽ 1 150 000',
+      imgPath: 'Samsung-Galaxy-S24-Yellow-01-405x405.png',
+      saleBadgeClass: 'lw-promo-sale-badge--small',
+      imgWidth: 194,
+      imgHeight: 194
+    },
+    {
+      title: 'Смартфон Samsung Galaxy S24 8/128GB SM-S921B',
+      price: 'Цена ₽ 1 150 000',
+      imgPath: 'Samsung-Galaxy-S24-Purple-01-405x405.png',
+      saleBadgeClass: 'lw-promo-sale-badge--small',
+      imgWidth: 194,
+      imgHeight: 194
     },
   ]
 
-section.lw-promo-catalog
-  .container
+section.section.lw-promo-catalog
+  .lw-container
     .swiper.lw-promo-catalog-swiper
       .swiper-wrapper
         each product in productList
